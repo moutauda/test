@@ -11,17 +11,91 @@ export class ResultatsService {
             score1: 0,
             equipe2: 'Allemagne',
             score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
+        },{
+            id: 1,
+            equipe1: 'Brésil',
+            score1: 0,
+            equipe2: 'Allemagne',
+            score2: 1
         },
-        {
-            id: 2,
-            name: 'Télévision',
-            status: 'allumé'
-        },
-        {
-            id: 3,
-            name: 'Ordinateur',
-            status: 'éteint'
-        }
     ];
 
     getAppareilById(id: number) {
@@ -31,6 +105,10 @@ export class ResultatsService {
             }
         );
         return appareil;
+    }
+
+    getAll(){
+        return this.resultats;
     }
 /*
 

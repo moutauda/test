@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ResultatsService} from "../services/resultats.service";
 
 @Component({
   selector: 'accueil',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class AccueilComponent implements OnInit {
 
 
-  let
+  resultats = undefined
 
-  constructor() { }
+  constructor(private resultatsService: ResultatsService) { }
 
   ngOnInit() {
+    this.resultats = this.resultatsService.getAll();
+    console.log(this.resultats);
     this.getVictory();
     this.getTeams();
   }
