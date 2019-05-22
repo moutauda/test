@@ -4,7 +4,7 @@ import {FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MonPremierComponent } from './mon-premier/mon-premier.component';
+import { AccueilComponent } from './accueil/accueil.component';
 import { AppareilComponent } from './appareil/appareil.component';
 import { AppareilService } from './services/appareil.service';
 import { AuthComponent } from './auth/auth.component';
@@ -14,12 +14,10 @@ import { AuthService } from './services/auth.service';
 import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { AuthGuard } from './services/auth-guard.service';
+import {ResultatsService} from "./services/resultats.service";
 
 const appRoutes: Routes = [
-  { path: 'appareils', canActivate: [AuthGuard], component : AppareilViewComponent },
-  { path: 'appareils/:id', canActivate: [AuthGuard], component : SingleAppareilComponent },
-  { path: 'auth', component : AuthComponent},
-  { path: '', component : AppareilViewComponent},
+  { path: '', component : AccueilComponent},
   { path: 'not-found', component : FourOhFourComponent},
   { path: '**', redirectTo: '/not-found' }
 ];
@@ -28,11 +26,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    MonPremierComponent,
-    AppareilComponent,
-    AuthComponent,
-    AppareilViewComponent,
-    SingleAppareilComponent,
+    AccueilComponent,
     FourOhFourComponent
   ],
   imports: [
@@ -42,9 +36,7 @@ const appRoutes: Routes = [
     FormsModule
   ],
   providers: [
-    AppareilService,
-    AuthService,
-    AuthGuard
+      ResultatsService
   ],
   bootstrap: [AppComponent]
 })
