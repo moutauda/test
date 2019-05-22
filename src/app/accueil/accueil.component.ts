@@ -8,7 +8,6 @@ import {ResultatsService} from "../services/resultats.service";
 })
 export class AccueilComponent implements OnInit {
 
-
   resultats = undefined
 
   constructor(private resultatsService: ResultatsService) { }
