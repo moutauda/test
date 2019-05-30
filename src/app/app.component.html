@@ -1,5 +1,20 @@
-<div class="container">
-  <div class="row">
-    <router-outlet></router-outlet>
-  </div>
+<h1 style="text-align: center">Tableau des resultats</h1>
+
+<div style="text-align: center" *ngFor="let resultat of resultats">
+  {{resultat.equipe1}} {{resultat.score1}} - {{resultat.score2}} {{resultat.equipe2}}
 </div>
+
+<div style="text-align: left"> Nb victoires J1 : {{ vicJ1 }}</div>
+<div style="text-align: right"> Nb victoires J2 : {{ vicJ2 }}</div>
+
+<div style="text-align: center"> Nb de matchs restants : {{ matchRestants }}</div>
+
+<br>
+<br>
+<div> Equipes J1 restantes : {{ leftTeamJ1 }}</div>
+
+<br>
+<br>
+<div> Equipes J2 restantes : {{ leftTeamJ2 }}</div>
+
+
